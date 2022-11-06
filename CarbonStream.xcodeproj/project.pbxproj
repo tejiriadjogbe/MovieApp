@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B509307A29155F4B00DEACBB /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B509307829155F4B00DEACBB /* HorizontalScrollView.swift */; };
+		B509307B29155F4B00DEACBB /* HorizontalScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B509307929155F4B00DEACBB /* HorizontalScrollView.xib */; };
+		B509307E2917FDFD00DEACBB /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B509307D2917FDFD00DEACBB /* MoviesModel.swift */; };
+		B50930802918034500DEACBB /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B509307F2918034500DEACBB /* ActivityIndicator.swift */; };
+		B5093082291810E100DEACBB /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5093081291810E100DEACBB /* UIImageView+Extension.swift */; };
+		B50DE1DB290F196D00342CE3 /* HomeStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50DE1DA290F196D00342CE3 /* HomeStoryBoard.storyboard */; };
+		B50DE1DD290F199E00342CE3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50DE1DC290F199E00342CE3 /* HomeViewController.swift */; };
+		B50DE1E1290FC53500342CE3 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50DE1E0290FC53500342CE3 /* Views.swift */; };
+		B5356848290D3FA3004B84EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5356847290D3FA3004B84EC /* AppDelegate.swift */; };
+		B535684A290D3FA3004B84EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5356849290D3FA3004B84EC /* SceneDelegate.swift */; };
+		B535684C290D3FA3004B84EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535684B290D3FA3004B84EC /* ViewController.swift */; };
+		B535684F290D3FA3004B84EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B535684D290D3FA3004B84EC /* Main.storyboard */; };
+		B5356851290D3FA4004B84EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5356850290D3FA4004B84EC /* Assets.xcassets */; };
+		B5356854290D3FA4004B84EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5356852290D3FA4004B84EC /* LaunchScreen.storyboard */; };
+		B5356862290D4AF7004B84EC /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5356861290D4AF7004B84EC /* WebService.swift */; };
+		B5356864290E8258004B84EC /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5356863290E8258004B84EC /* Box.swift */; };
+		B535686D290E8819004B84EC /* CarbonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535686C290E8819004B84EC /* CarbonButton.swift */; };
+		B535686F290E88D0004B84EC /* CarbonButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = B535686E290E88D0004B84EC /* CarbonButton.xib */; };
+		B5356871290E8939004B84EC /* CarbonButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5356870290E8939004B84EC /* CarbonButtonModel.swift */; };
+		B5356873290E906C004B84EC /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5356872290E906C004B84EC /* AppColors.swift */; };
+		B5356875290E96DC004B84EC /* BaseXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5356874290E96DC004B84EC /* BaseXib.swift */; };
+		B59FF0B1290FDE7800B14613 /* MoviePoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FF0B0290FDE7800B14613 /* MoviePoster.swift */; };
+		B59FF0B3290FDE8600B14613 /* MoviePosterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FF0B2290FDE8600B14613 /* MoviePosterModel.swift */; };
+		B59FF0B5290FDE9600B14613 /* MoviePoster.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59FF0B4290FDE9600B14613 /* MoviePoster.xib */; };
+		B59FF0BA2910520A00B14613 /* CarbonSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FF0B72910520900B14613 /* CarbonSearchResult.swift */; };
+		B59FF0BB2910520A00B14613 /* CarbonSearchResult.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59FF0B82910520900B14613 /* CarbonSearchResult.xib */; };
+		B59FF0BC2910520A00B14613 /* CarbonSearchResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FF0B92910520900B14613 /* CarbonSearchResultModel.swift */; };
+		B59FF0BF291053FA00B14613 /* CarbonSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FF0BE291053FA00B14613 /* CarbonSearchField.swift */; };
+		B59FF0C12910540E00B14613 /* CarbonSearchFieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FF0C02910540E00B14613 /* CarbonSearchFieldModel.swift */; };
+		B59FF0C32910541C00B14613 /* CarbonSearchField.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59FF0C22910541C00B14613 /* CarbonSearchField.xib */; };
+		B59FF0C62910560900B14613 /* PlainTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FF0C52910560900B14613 /* PlainTextFields.swift */; };
+		B59FF0C929108BEC00B14613 /* CarbonBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FF0C829108BEC00B14613 /* CarbonBanner.swift */; };
+		B59FF0CB29108BFF00B14613 /* CarbonBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FF0CA29108BFF00B14613 /* CarbonBannerModel.swift */; };
+		B59FF0CD29108C1E00B14613 /* CarbonBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59FF0CC29108C1E00B14613 /* CarbonBanner.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B509307829155F4B00DEACBB /* HorizontalScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
+		B509307929155F4B00DEACBB /* HorizontalScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalScrollView.xib; sourceTree = "<group>"; };
+		B509307D2917FDFD00DEACBB /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
+		B509307F2918034500DEACBB /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		B5093081291810E100DEACBB /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		B50DE1DA290F196D00342CE3 /* HomeStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryBoard.storyboard; sourceTree = "<group>"; };
+		B50DE1DC290F199E00342CE3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B50DE1E0290FC53500342CE3 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		B5356844290D3FA3004B84EC /* CarbonStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarbonStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5356847290D3FA3004B84EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5356849290D3FA3004B84EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B535684B290D3FA3004B84EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B535684E290D3FA3004B84EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5356850290D3FA4004B84EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5356853290D3FA4004B84EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5356855290D3FA4004B84EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5356861290D4AF7004B84EC /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		B5356863290E8258004B84EC /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		B535686C290E8819004B84EC /* CarbonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonButton.swift; sourceTree = "<group>"; };
+		B535686E290E88D0004B84EC /* CarbonButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarbonButton.xib; sourceTree = "<group>"; };
+		B5356870290E8939004B84EC /* CarbonButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonButtonModel.swift; sourceTree = "<group>"; };
+		B5356872290E906C004B84EC /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		B5356874290E96DC004B84EC /* BaseXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXib.swift; sourceTree = "<group>"; };
+		B59FF0B0290FDE7800B14613 /* MoviePoster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePoster.swift; sourceTree = "<group>"; };
+		B59FF0B2290FDE8600B14613 /* MoviePosterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterModel.swift; sourceTree = "<group>"; };
+		B59FF0B4290FDE9600B14613 /* MoviePoster.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviePoster.xib; sourceTree = "<group>"; };
+		B59FF0B72910520900B14613 /* CarbonSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarbonSearchResult.swift; sourceTree = "<group>"; };
+		B59FF0B82910520900B14613 /* CarbonSearchResult.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarbonSearchResult.xib; sourceTree = "<group>"; };
+		B59FF0B92910520900B14613 /* CarbonSearchResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarbonSearchResultModel.swift; sourceTree = "<group>"; };
+		B59FF0BE291053FA00B14613 /* CarbonSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonSearchField.swift; sourceTree = "<group>"; };
+		B59FF0C02910540E00B14613 /* CarbonSearchFieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonSearchFieldModel.swift; sourceTree = "<group>"; };
+		B59FF0C22910541C00B14613 /* CarbonSearchField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarbonSearchField.xib; sourceTree = "<group>"; };
+		B59FF0C52910560900B14613 /* PlainTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTextFields.swift; sourceTree = "<group>"; };
+		B59FF0C829108BEC00B14613 /* CarbonBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonBanner.swift; sourceTree = "<group>"; };
+		B59FF0CA29108BFF00B14613 /* CarbonBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonBannerModel.swift; sourceTree = "<group>"; };
+		B59FF0CC29108C1E00B14613 /* CarbonBanner.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarbonBanner.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5356841290D3FA3004B84EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B509307729155F4B00DEACBB /* HorizontalScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B509307829155F4B00DEACBB /* HorizontalScrollView.swift */,
+				B509307929155F4B00DEACBB /* HorizontalScrollView.xib */,
+			);
+			path = HorizontalScrollView;
+			sourceTree = "<group>";
+		};
+		B509307C2917FDC600DEACBB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B509307D2917FDFD00DEACBB /* MoviesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B50DE1DE290FC4ED00342CE3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B59FF0C4291055F200B14613 /* TextFields */,
+				B50DE1E2290FC55800342CE3 /* Views */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B50DE1DF290FC50100342CE3 /* AppComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B509307729155F4B00DEACBB /* HorizontalScrollView */,
+				B59FF0C729108BD200B14613 /* CarbonBanner */,
+				B59FF0BD291053D400B14613 /* CarbonSearchField */,
+				B59FF0B62910520900B14613 /* CarbonSearchResult */,
+				B59FF0AF290FDE5C00B14613 /* MoviePoster */,
+				B535686B290E87FB004B84EC /* CarbonButtons */,
+			);
+			path = AppComponents;
+			sourceTree = "<group>";
+		};
+		B50DE1E2290FC55800342CE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B50DE1E0290FC53500342CE3 /* Views.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B535683B290D3FA3004B84EC = {
+			isa = PBXGroup;
+			children = (
+				B5356846290D3FA3004B84EC /* CarbonStream */,
+				B5356845290D3FA3004B84EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5356845290D3FA3004B84EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5356844290D3FA3004B84EC /* CarbonStream.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5356846290D3FA3004B84EC /* CarbonStream */ = {
+			isa = PBXGroup;
+			children = (
+				B5356868290E8308004B84EC /* UI */,
+				B5356866290E82D8004B84EC /* Network */,
+				B5356865290E82CC004B84EC /* Utilities */,
+				B5356847290D3FA3004B84EC /* AppDelegate.swift */,
+				B5356849290D3FA3004B84EC /* SceneDelegate.swift */,
+				B535684B290D3FA3004B84EC /* ViewController.swift */,
+				B535684D290D3FA3004B84EC /* Main.storyboard */,
+				B5356850290D3FA4004B84EC /* Assets.xcassets */,
+				B5356852290D3FA4004B84EC /* LaunchScreen.storyboard */,
+				B5356855290D3FA4004B84EC /* Info.plist */,
+			);
+			path = CarbonStream;
+			sourceTree = "<group>";
+		};
+		B5356865290E82CC004B84EC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B5356863290E8258004B84EC /* Box.swift */,
+				B5356872290E906C004B84EC /* AppColors.swift */,
+				B5356874290E96DC004B84EC /* BaseXib.swift */,
+				B509307F2918034500DEACBB /* ActivityIndicator.swift */,
+				B5093081291810E100DEACBB /* UIImageView+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B5356866290E82D8004B84EC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B509307C2917FDC600DEACBB /* Models */,
+				B5356861290D4AF7004B84EC /* WebService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B5356868290E8308004B84EC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B535686A290E8342004B84EC /* Components */,
+				B5356869290E832E004B84EC /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B5356869290E832E004B84EC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B50DE1DA290F196D00342CE3 /* HomeStoryBoard.storyboard */,
+				B50DE1DC290F199E00342CE3 /* HomeViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B535686A290E8342004B84EC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B50DE1DE290FC4ED00342CE3 /* Extensions */,
+				B50DE1DF290FC50100342CE3 /* AppComponents */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B535686B290E87FB004B84EC /* CarbonButtons */ = {
+			isa = PBXGroup;
+			children = (
+				B535686C290E8819004B84EC /* CarbonButton.swift */,
+				B535686E290E88D0004B84EC /* CarbonButton.xib */,
+				B5356870290E8939004B84EC /* CarbonButtonModel.swift */,
+			);
+			path = CarbonButtons;
+			sourceTree = "<group>";
+		};
+		B59FF0AF290FDE5C00B14613 /* MoviePoster */ = {
+			isa = PBXGroup;
+			children = (
+				B59FF0B0290FDE7800B14613 /* MoviePoster.swift */,
+				B59FF0B2290FDE8600B14613 /* MoviePosterModel.swift */,
+				B59FF0B4290FDE9600B14613 /* MoviePoster.xib */,
+			);
+			path = MoviePoster;
+			sourceTree = "<group>";
+		};
+		B59FF0B62910520900B14613 /* CarbonSearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				B59FF0B72910520900B14613 /* CarbonSearchResult.swift */,
+				B59FF0B82910520900B14613 /* CarbonSearchResult.xib */,
+				B59FF0B92910520900B14613 /* CarbonSearchResultModel.swift */,
+			);
+			path = CarbonSearchResult;
+			sourceTree = "<group>";
+		};
+		B59FF0BD291053D400B14613 /* CarbonSearchField */ = {
+			isa = PBXGroup;
+			children = (
+				B59FF0BE291053FA00B14613 /* CarbonSearchField.swift */,
+				B59FF0C02910540E00B14613 /* CarbonSearchFieldModel.swift */,
+				B59FF0C22910541C00B14613 /* CarbonSearchField.xib */,
+			);
+			path = CarbonSearchField;
+			sourceTree = "<group>";
+		};
+		B59FF0C4291055F200B14613 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				B59FF0C52910560900B14613 /* PlainTextFields.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		B59FF0C729108BD200B14613 /* CarbonBanner */ = {
+			isa = PBXGroup;
+			children = (
+				B59FF0C829108BEC00B14613 /* CarbonBanner.swift */,
+				B59FF0CA29108BFF00B14613 /* CarbonBannerModel.swift */,
+				B59FF0CC29108C1E00B14613 /* CarbonBanner.xib */,
+			);
+			path = CarbonBanner;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5356843290D3FA3004B84EC /* CarbonStream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5356858290D3FA4004B84EC /* Build configuration list for PBXNativeTarget "CarbonStream" */;
+			buildPhases = (
+				B5356840290D3FA3004B84EC /* Sources */,
+				B5356841290D3FA3004B84EC /* Frameworks */,
+				B5356842290D3FA3004B84EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarbonStream;
+			packageProductDependencies = (
+			);
+			productName = CarbonStream;
+			productReference = B5356844290D3FA3004B84EC /* CarbonStream.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B535683C290D3FA3004B84EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					B5356843290D3FA3004B84EC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B535683F290D3FA3004B84EC /* Build configuration list for PBXProject "CarbonStream" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B535683B290D3FA3004B84EC;
+			packageReferences = (
+			);
+			productRefGroup = B5356845290D3FA3004B84EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5356843290D3FA3004B84EC /* CarbonStream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5356842290D3FA3004B84EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50DE1DB290F196D00342CE3 /* HomeStoryBoard.storyboard in Resources */,
+				B5356854290D3FA4004B84EC /* LaunchScreen.storyboard in Resources */,
+				B5356851290D3FA4004B84EC /* Assets.xcassets in Resources */,
+				B535686F290E88D0004B84EC /* CarbonButton.xib in Resources */,
+				B535684F290D3FA3004B84EC /* Main.storyboard in Resources */,
+				B509307B29155F4B00DEACBB /* HorizontalScrollView.xib in Resources */,
+				B59FF0C32910541C00B14613 /* CarbonSearchField.xib in Resources */,
+				B59FF0B5290FDE9600B14613 /* MoviePoster.xib in Resources */,
+				B59FF0BB2910520A00B14613 /* CarbonSearchResult.xib in Resources */,
+				B59FF0CD29108C1E00B14613 /* CarbonBanner.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5356840290D3FA3004B84EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B535684C290D3FA3004B84EC /* ViewController.swift in Sources */,
+				B509307A29155F4B00DEACBB /* HorizontalScrollView.swift in Sources */,
+				B59FF0BF291053FA00B14613 /* CarbonSearchField.swift in Sources */,
+				B5093082291810E100DEACBB /* UIImageView+Extension.swift in Sources */,
+				B59FF0CB29108BFF00B14613 /* CarbonBannerModel.swift in Sources */,
+				B59FF0B3290FDE8600B14613 /* MoviePosterModel.swift in Sources */,
+				B5356848290D3FA3004B84EC /* AppDelegate.swift in Sources */,
+				B5356871290E8939004B84EC /* CarbonButtonModel.swift in Sources */,
+				B535686D290E8819004B84EC /* CarbonButton.swift in Sources */,
+				B509307E2917FDFD00DEACBB /* MoviesModel.swift in Sources */,
+				B50DE1E1290FC53500342CE3 /* Views.swift in Sources */,
+				B59FF0B1290FDE7800B14613 /* MoviePoster.swift in Sources */,
+				B5356862290D4AF7004B84EC /* WebService.swift in Sources */,
+				B50930802918034500DEACBB /* ActivityIndicator.swift in Sources */,
+				B5356873290E906C004B84EC /* AppColors.swift in Sources */,
+				B59FF0BA2910520A00B14613 /* CarbonSearchResult.swift in Sources */,
+				B5356875290E96DC004B84EC /* BaseXib.swift in Sources */,
+				B535684A290D3FA3004B84EC /* SceneDelegate.swift in Sources */,
+				B5356864290E8258004B84EC /* Box.swift in Sources */,
+				B50DE1DD290F199E00342CE3 /* HomeViewController.swift in Sources */,
+				B59FF0C12910540E00B14613 /* CarbonSearchFieldModel.swift in Sources */,
+				B59FF0C62910560900B14613 /* PlainTextFields.swift in Sources */,
+				B59FF0C929108BEC00B14613 /* CarbonBanner.swift in Sources */,
+				B59FF0BC2910520A00B14613 /* CarbonSearchResultModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B535684D290D3FA3004B84EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B535684E290D3FA3004B84EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5356852290D3FA4004B84EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5356853290D3FA4004B84EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5356856290D3FA4004B84EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5356857290D3FA4004B84EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5356859290D3FA4004B84EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QLL4U73U8;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarbonStream/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = HomeStoryBoard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CarbonStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B535685A290D3FA4004B84EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QLL4U73U8;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarbonStream/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = HomeStoryBoard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CarbonStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B535683F290D3FA3004B84EC /* Build configuration list for PBXProject "CarbonStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5356856290D3FA4004B84EC /* Debug */,
+				B5356857290D3FA4004B84EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5356858290D3FA4004B84EC /* Build configuration list for PBXNativeTarget "CarbonStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5356859290D3FA4004B84EC /* Debug */,
+				B535685A290D3FA4004B84EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B535683C290D3FA3004B84EC /* Project object */;
+}
